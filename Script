@@ -3,7 +3,6 @@
 
 -- Instances:
 
-local GalaxyGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local FE = Instance.new("Frame")
@@ -62,12 +61,7 @@ local Frame_8 = Instance.new("Frame")
 
 --Properties:
 
-GalaxyGui.Name = "GalaxyGui"
-GalaxyGui.Parent = game.CoreGui
-GalaxyGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-GalaxyGui.ResetOnSpawn = false
-
-Frame.Parent = GalaxyGui
+Frame.Parent = game.StarterGui.GalaxyGui
 Frame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
 Frame.Position = UDim2.new(0.518182516, 0, 0.0872865245, 0)
 Frame.Size = UDim2.new(0, 471, 0, 349)
@@ -84,6 +78,7 @@ FE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 FE.BackgroundTransparency = 1.000
 FE.Position = UDim2.new(0.237791926, 0, 0.123209171, 0)
 FE.Size = UDim2.new(0, 359, 0, 306)
+FE.Visible = false
 
 TextButton.Parent = FE
 TextButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
@@ -269,7 +264,6 @@ Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.BackgroundTransparency = 1.000
 Scripts.Position = UDim2.new(0.237791926, 0, 0.123209171, 0)
 Scripts.Size = UDim2.new(0, 359, 0, 306)
-Scripts.Visible = false
 
 TextButton_9.Parent = Scripts
 TextButton_9.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
@@ -392,7 +386,7 @@ Frame_8.Size = UDim2.new(0, 102, 0, 41)
 
 -- Scripts:
 
-local function RUKW_fake_script() -- TextButton.LocalScript 
+local function EZNDVS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -400,8 +394,8 @@ local function RUKW_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(RUKW_fake_script)()
-local function DIKTR_fake_script() -- Fill.LocalScript 
+coroutine.wrap(EZNDVS_fake_script)()
+local function DFJL_fake_script() -- Fill.LocalScript 
 	local script = Instance.new('LocalScript', Fill)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -426,8 +420,8 @@ local function DIKTR_fake_script() -- Fill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DIKTR_fake_script)()
-local function YCVU_fake_script() -- Fill_2.LocalScript 
+coroutine.wrap(DFJL_fake_script)()
+local function RGDPI_fake_script() -- Fill_2.LocalScript 
 	local script = Instance.new('LocalScript', Fill_2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -452,8 +446,8 @@ local function YCVU_fake_script() -- Fill_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YCVU_fake_script)()
-local function AEEXRYO_fake_script() -- Fill_3.LocalScript 
+coroutine.wrap(RGDPI_fake_script)()
+local function VQTE_fake_script() -- Fill_3.LocalScript 
 	local script = Instance.new('LocalScript', Fill_3)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -478,8 +472,8 @@ local function AEEXRYO_fake_script() -- Fill_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AEEXRYO_fake_script)()
-local function WXOC_fake_script() -- Frame.Dragify 
+coroutine.wrap(VQTE_fake_script)()
+local function QLOV_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -520,8 +514,8 @@ local function WXOC_fake_script() -- Frame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(WXOC_fake_script)()
-local function PITAXS_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(QLOV_fake_script)()
+local function YZABQZ_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -531,8 +525,8 @@ local function PITAXS_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(PITAXS_fake_script)()
-local function YWWP_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(YZABQZ_fake_script)()
+local function SDIFYX_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -542,8 +536,8 @@ local function YWWP_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(YWWP_fake_script)()
-local function EKHIWIB_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(SDIFYX_fake_script)()
+local function UDVPELI_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -553,8 +547,8 @@ local function EKHIWIB_fake_script() -- TextButton_8.LocalScript
 	end)
 	
 end
-coroutine.wrap(EKHIWIB_fake_script)()
-local function CGOWRUS_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(UDVPELI_fake_script)()
+local function PBPKY_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -596,68 +590,79 @@ local function CGOWRUS_fake_script() -- TextButton_9.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(CGOWRUS_fake_script)()
-local function VXPCWL_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(PBPKY_fake_script)()
+local function HMPED_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		
 	end)
 end
-coroutine.wrap(VXPCWL_fake_script)()
-local function ALHO_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(HMPED_fake_script)()
+local function QVTTG_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		local localPlayer = game:GetService("Players").LocalPlayer
+		_G.aimbot = false
+		local camera = game.Workspace.CurrentCamera
+		local localplayer = game:GetService("Players").LocalPlayer
 	
-		local function player()
-			local target = nil
-			local dist = math.huge
+		script.Parent.MouseButton1Click:Connect(function()
+			if _G.aimbot == false then
+				_G.aimbot = true
+				function closestplayer()
+					local dist = math.huge -- math.huge means a really large number, 1M+.
+					local target = nil --- nil means no value
+					for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+						if v ~= localplayer then
+							if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+								local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+								if magnitude < dist then
+									dist = magnitude
+									target = v
+								end
 	
-			for i, v in pairs(game:GetService("Players"):GetPlayers()) do
-				if v.Name ~= localPlayer.Name then
-					if v.Character and v.Character:FindFirstChild("Head") and v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Head") and v.TeamColor ~= localPlayer.TeamColor then
-						local magnitude = (v.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
-	
-						if magnitude < dist then
-							target = v
-							dist = magnitude
+							end
 						end
 					end
+					return target
 				end
 	
-				return target
+			else
+				_G.aimbot = false
 			end
+		end)
 	
+		local settings = {
+			keybind = Enum.UserInputType.MouseButton2
+		}
 	
-			local camera = game.Workspace.CurrentCamera
-			local UIS = game:GetService("UserInputService")
-			local aim = false
+		local UIS = game:GetService("UserInputService")
+		local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
 	
-			game:GetService("RunService").RenderStepped:Connect(function()
-				if aim then
-					camera.CFrame = CFrame.new(camera.CFrame.Position,player().Character.Head.Position)
-				end
-			end)
+		UIS.InputBegan:Connect(function(inp)
+			if inp.UserInputType == settings.keybind then
+				aiming = true
+			end
+		end)
 	
-			UIS.InputBegan:Connect(function(inp)
-				if inp.UserInputType == Enum.UserInputType.MouseButton2 then
-					aim = true
-				end
-			end)
+		UIS.InputEnded:Connect(function(inp)
+			if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+				aiming = false
+			end
+		end)
 	
-			UIS.InputEnded:Connect(function(inp)
-				if inp.UserInputType == Enum.UserInputType.MouseButton2 then
-					aim = false
-				end
-			end)
-		end
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if aiming then
+				camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position) -- locks into the HEAD
+			end
+		end)
 	end)
 	
+	
 end
-coroutine.wrap(ALHO_fake_script)()
-local function QWJDOV_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(QVTTG_fake_script)()
+local function RCPPZ_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -706,8 +711,8 @@ local function QWJDOV_fake_script() -- TextButton_12.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QWJDOV_fake_script)()
-local function MVVYJO_fake_script() -- TextButton_13.LocalScript 
+coroutine.wrap(RCPPZ_fake_script)()
+local function THHSEMV_fake_script() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -720,8 +725,8 @@ local function MVVYJO_fake_script() -- TextButton_13.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(MVVYJO_fake_script)()
-local function WIHSKS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(THHSEMV_fake_script)()
+local function XXLTX_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function onKeyPress(a,b)
@@ -735,4 +740,4 @@ local function WIHSKS_fake_script() -- Frame.LocalScript
 	--free key press open gui script
 	
 end
-coroutine.wrap(WIHSKS_fake_script)()
+coroutine.wrap(XXLTX_fake_script)()
